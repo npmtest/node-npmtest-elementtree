@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-elementtree/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-elementtree/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-elementtree/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-elementtree/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-elementtree/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-elementtree/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-elementtree/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-elementtree/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-elementtree/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-elementtree/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-elementtree/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-elementtree/build/coverage.html/index.html)
 
@@ -35,14 +35,39 @@
 ```json
 
 {
-    "author": "Rackspace US, Inc.",
+    "author": {
+        "name": "Rackspace US, Inc."
+    },
+    "bugs": {
+        "url": "https://github.com/racker/node-elementtree/issues"
+    },
     "contributors": [
-        "Paul Querna <paul.querna@rackspace.com>",
-        "Tomaz Muraus <tomaz.muraus@rackspace.com>"
+        {
+            "name": "Paul Querna"
+        },
+        {
+            "name": "Tomaz Muraus"
+        }
     ],
-    "name": "elementtree",
+    "dependencies": {
+        "sax": "1.1.4"
+    },
     "description": "XML Serialization and Parsing module based on Python's ElementTree.",
-    "version": "0.1.7",
+    "devDependencies": {
+        "whiskey": "0.8.x"
+    },
+    "directories": {
+        "lib": "lib"
+    },
+    "dist": {
+        "shasum": "9ac91be6e52fb6e6244c4e54a4ac3ed8ae8e29c0",
+        "tarball": "https://registry.npmjs.org/elementtree/-/elementtree-0.1.7.tgz"
+    },
+    "engines": {
+        "node": ">= 0.4.0"
+    },
+    "gitHead": "1e9496379f6a1072e2b817f51a296f7cd9f07e43",
+    "homepage": "https://github.com/racker/node-elementtree",
     "keywords": [
         "xml",
         "sax",
@@ -50,28 +75,39 @@
         "seralization",
         "elementtree"
     ],
-    "homepage": "https://github.com/racker/node-elementtree",
+    "license": "Apache-2.0",
+    "main": "lib/elementtree.js",
+    "maintainers": [
+        {
+            "name": "jirwin"
+        },
+        {
+            "name": "kami"
+        },
+        {
+            "name": "mburns"
+        },
+        {
+            "name": "pquerna"
+        },
+        {
+            "name": "rchiniquy"
+        },
+        {
+            "name": "rphillips"
+        }
+    ],
+    "name": "elementtree",
+    "optionalDependencies": {},
     "repository": {
         "type": "git",
         "url": "git://github.com/racker/node-elementtree.git"
     },
-    "main": "lib/elementtree.js",
-    "directories": {
-        "lib": "lib"
-    },
     "scripts": {
         "test": "make test"
     },
-    "engines": {
-        "node": ">= 0.4.0"
-    },
-    "dependencies": {
-        "sax": "1.1.4"
-    },
-    "devDependencies": {
-        "whiskey": "0.8.x"
-    },
-    "license": "Apache-2.0"
+    "version": "0.1.7",
+    "bin": {}
 }
 ```
 
